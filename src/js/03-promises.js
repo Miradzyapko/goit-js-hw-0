@@ -19,7 +19,7 @@ const delay = document.querySelector('input[name="delay"]');
 btnPromise.addEventListener('click', startCreatePromise);
 
 
-function startCreatePromise(event) {
+function startCreatePromise (event) {
   event.preventDefault();
   const firstDelay = Number(delay.value);
   const delayStep = Number(step.value);
