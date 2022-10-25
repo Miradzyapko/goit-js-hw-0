@@ -23,9 +23,8 @@ const delay = document.querySelector('input[name="delay"]');
 
 
 
-btnPromise.addEventListener('click', event => {
-  startCreatePromise(event);
-});
+btnPromise.addEventListener('click', startCreatePromise);
+
 
 function startCreatePromise(event) {
   event.preventDefault();
