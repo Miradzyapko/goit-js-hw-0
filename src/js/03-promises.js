@@ -46,6 +46,7 @@ function startCreatePromise(event) {
       .catch(({ position, delay }) => {
         Notiflix.Notify.failure(`Rejcted promise ${position} in ${delay}ms`);
       });
+      btnPromise.reset();
       firstDelay += delayStep;
   }
 }
